@@ -139,16 +139,15 @@ justify-content: flex-start;
 }
 
 #profile-image-hover {
-    opacity: 0!important;
-}
-
-.box:hover #profile-image {
     opacity: 0;
 }
 
-.box:hover #profile-image-hover {
-    opacity: 1 !important;
+#profile-image-hover2 {
+    opacity: 0;
 }
+
+
+
 
 /* Buttons */
 .button {

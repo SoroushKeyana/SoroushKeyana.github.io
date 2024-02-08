@@ -39,15 +39,15 @@
                         <p class="text-justify mt-3">I'm a Web Developer with a knack for problem-solving and a passion for crafting user-friendly web experiences. With a Bachelor's degree in Computer Science and hands-on experience in Python, Django, HTML, CSS, JavaScript, and more, I'm ready to tackle new challenges and make an impact. </p>
                         
                         <div class="d-flex justify-content-center align-items-center">
-                            <div class="button">
+                            <div class="button" id="resume-button">
                                 <i class="fa-regular fa-address-card"></i>
                                 <a class="text" href="files/resume.pdf" target="_blank"></i><i class="fa-regular fa-address-card"></i> Resume</a>
                             </div>
-                            <div class="button">
+                            <div class="button" id="linkedin-button">
                                 <i class="fa-brands fa-linkedin"></i>
-                                <a href="https://www.linkedin.com/in/soroush-keyana-666243150/" class="text" target="_blank"><i class="fa-brands fa-linkedin"></i> inkedIn</a>
+                                <a href="https://www.linkedin.com/in/soroush-keyana-666243150/" class="text" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                             </div>
-                            <div class="button">
+                            <div class="button" id="github-button">
                                 <i class="fa-brands fa-github"></i>
                                 <a class="text" target="_blank" href="http://github.com/SoroushKeyana"><i class="fa-brands fa-github"></i> GitHub</a>
                             </div>
@@ -57,11 +57,11 @@
                         <div class="image-wrapper">
                             <div class="box">
                                 <div class="circle">
-                                    <img id="profile-image" src="images/bot 7.png">
-                                    <img id="profile-image-hover" src="images/bot 8.png">
+                                    <img id="profile-image" src="images/profile.png">
+                                    <img id="profile-image-hover" src="images/profile hover 2.png">
                                 </div>
-                                <img id="profile-image" src="images/bot 7.png">
-                                <img id="profile-image-hover" src="images/bot 8.png">
+                                <img id="profile-image2" src="images/profile.png">
+                                <img id="profile-image-hover2" src="images/profile hover 2.png">
                             </div>
                         </div>
                     </div>
@@ -193,4 +193,58 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const profileImage = document.getElementById('profile-image');
+        const profileImage2 = document.getElementById('profile-image2');
+        const profileImageHover = document.getElementById('profile-image-hover');
+        const profileImageHover2 = document.getElementById('profile-image-hover2');
+
+        const resumeButton = document.getElementById('resume-button');
+        const linkedinButton = document.getElementById('linkedin-button');
+        const githubButton = document.getElementById('github-button');
+
+        // Add event listeners to buttons
+        resumeButton.addEventListener('mouseenter', function() {
+            profileImage.style.opacity = '0';
+            profileImage2.style.opacity = '0';
+            profileImageHover.style.opacity = '1';
+            profileImageHover2.style.opacity = '1';
+        });
+        resumeButton.addEventListener('mouseleave', function() {
+            profileImage.style.opacity = '1';
+            profileImage2.style.opacity = '1';
+            profileImageHover.style.opacity = '0';
+            profileImageHover2.style.opacity = '0';
+        });
+
+        linkedinButton.addEventListener('mouseenter', function() {
+            profileImage.style.opacity = '0';
+            profileImage2.style.opacity = '0';
+            profileImageHover.style.opacity = '1';
+            profileImageHover2.style.opacity = '1';
+        });
+        linkedinButton.addEventListener('mouseleave', function() {
+            profileImage.style.opacity = '1';
+            profileImage2.style.opacity = '1';
+            profileImageHover.style.opacity = '0';
+            profileImageHover2.style.opacity = '0';
+        });
+
+        githubButton.addEventListener('mouseenter', function() {
+            profileImage.style.opacity = '0';
+            profileImage2.style.opacity = '0';
+            profileImageHover.style.opacity = '1';
+            profileImageHover2.style.opacity = '1';
+        });
+        githubButton.addEventListener('mouseleave', function() {
+            profileImage.style.opacity = '1';
+            profileImage2.style.opacity = '1';
+            profileImageHover.style.opacity = '0';
+            profileImageHover2.style.opacity = '0';
+        });
+    });
+
+
+        </script>
     </body>
