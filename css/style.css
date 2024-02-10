@@ -412,7 +412,7 @@ a {
     color: var(--second-secondary);
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    transition: all .5s ease;
     font-size: 50%;
 }
 
@@ -484,7 +484,7 @@ a {
 
 /* About Section */
 #about {
-    padding: 100px 0;
+    padding: 70px 0;
     position: relative;
 }
 .gray-bg {
@@ -497,18 +497,22 @@ a {
     vertical-align: middle;
     border-style: none;
 }
-
-.about-text h3 {
-  font-size: 45px;
+.about-text h1 {
+  font-size: 1.7rem;
   font-weight: 700;
-  margin: 0 0 6px;
+}
+.about-text h3 {
+  font-size: 1.2rem;
+}
+.about-text p {
+  font-size: .9rem !important;
 }
 @media (max-width: 767px) {
   .about-text h3 {
     font-size: 35px;
   }
 }
-.about-text h6 {
+.about-text h3 {
   font-weight: 600;
   margin-bottom: 15px;
 }
