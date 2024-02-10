@@ -33,7 +33,6 @@ a {
   font-style: normal;
 }
 
-/* Adjustments to Bootstrap's default navbar styling */
 .sm-logo{
   width: 6rem;
 }
@@ -48,10 +47,9 @@ a {
 }
 
 .nav-link {
-    color: var(--text-color); /* Adjust color */
+    color: var(--text-color); 
 }
 
-/* Optional: Increase spacing between navbar links */
 .navbar-nav .nav-link {
     margin-right: 15px;
 }
