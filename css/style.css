@@ -862,6 +862,26 @@ ul li a:hover:nth-child(4) {
   }
 }
 
+#back-to-top-btn {
+  display: none; 
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color) !important; 
+
+}
+
+#back-to-top-btn:hover {
+  color: var(--secondary-color) !important; 
+  color: var(--red) !important;
+}
 
 
 /* Animations */
