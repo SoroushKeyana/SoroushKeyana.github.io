@@ -34,7 +34,7 @@ a {
 }
 
 .sm-logo{
-  width: 6rem;
+  width: 20rem;
 }
 .navbar {
     padding: 1rem;
@@ -258,7 +258,7 @@ a {
     font-size: 30px;
     color: var(--text-color);
     transform-style: preserve-3d;
-    animation: rotateAndMove 15s ease-in-out infinite;
+    animation: rotateAndMove2 15s ease-in-out infinite;
 }
 
 #cube2 {
@@ -343,7 +343,7 @@ a {
 }
 #projects{
     height: auto;
-    background-color:  rgba(76,122,177, 0.85);
+    background-color:  rgba(28, 31, 34, 0.85);
     color: white;
 }
 .projects-section {
@@ -354,6 +354,7 @@ a {
 .projects-title {
     text-align: center;
     margin-bottom: 50px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .projects {
@@ -364,14 +365,14 @@ a {
 
 .card {
     width: 100%; 
-    max-width: 360px;
-    max-height: 250px; 
+    max-width: 550px;
+    max-height: 550px;  
     margin: 0 10px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--second-secondary);
-    border: 2.5px solid var(--text-color);
+    border: 2.5px solid rgba(28, 31, 34, 0.95);
     padding: 0px !important;
 
 }
@@ -385,27 +386,29 @@ a {
 
 .card .image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: .5s;
 }
 
 .card:hover .image img {
     opacity: .5;
-    transform: translateX(30%);
+    transform: scale(0.9);
 }
 
 .card .details {
     position: absolute;
     top: 0;
-    left: 100%; 
-    width: calc(100% - 20px); 
-    max-width: 250px; 
+    left: 0%; 
+    width: 100%; 
     height: 100% !important;
-    background: rgba(63,114,175, 0.9);
+    background-color:  rgba(34, 35, 36, 0.85);
     transition: .5s;
     transform-origin: left;
-    transform: perspective(2000px) rotateY(-90deg);
+    transform: perspective(2000px) rotateY(90deg);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card:hover .details {
@@ -421,10 +424,21 @@ a {
 .card .details .center h1 {
     color: var(--yellow);
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 27px;
     font-weight: 700;
     margin-top: 10px;
 }
+
+.card .details .center h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card .details .center h2 span{
+    color: var(--yellow);
+}
+
 
 .card .details .center p {
     margin: 10px 0;
@@ -441,7 +455,7 @@ a {
     text-decoration: none;
     border-radius: 5px;
     transition: all .5s ease;
-    font-size: 50%;
+    font-size: 70%;
 }
 
 .card .details .center a.btn:hover {
