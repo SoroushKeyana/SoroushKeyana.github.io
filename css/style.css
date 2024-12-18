@@ -521,6 +521,23 @@ a {
     .projects-title{
     font-size: 20px !important;
   }
+  .card .details .center h2 {
+    font-size: 8px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+.card .details .center h1 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+.card .details .center p {
+    font-size: 7px;
+    margin-top: 0px;
+}
+.card .details .center a.btn {
+    font-size: 10%;
+}
 }
 
 /* About Section */
