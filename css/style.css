@@ -76,8 +76,35 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.showcase-detail .name {
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
 #wd, #cp{
   color: #3F72AF;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.showcase-detail .lead {
+    text-align: justify;
+    max-width: 650px;
+    line-height: 1.8;
+    color: var(--text-color);
+    font-size: 1.05rem;
+    margin-top: 30px !important;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
 }
 
 /* Profile image */
@@ -239,14 +266,6 @@ a {
     }
 }
 @media screen and (max-width: 400px) {
-    .jumbotron {
-      height: 120vh;
-      padding-top: 50px !important;
-}
- .jumbotron h2 {
-      font-size: 1rem;
-}
-
 }
 
 
@@ -300,16 +319,21 @@ a {
 }
 
 @media only screen and (max-width: 450px) {
-
+  .jumbotron {
+    height: auto;
+    min-height: 100vh;
+    align-items: flex-start;
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
   .showcase-detail{
-    margin-top: 100px;
+    margin-top: 0;
   }
   .name{
     font-size: 25px !important;
   }
-  .jumbotron{
-    overflow: hidden;
-    padding-top: 40px;
+  .showcase-detail h2 {
+    text-align: center;
   }
   .lead{
     font-size: 10px;
