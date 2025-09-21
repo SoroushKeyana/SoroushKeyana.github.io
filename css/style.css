@@ -606,6 +606,19 @@ a {
   font-size: 15px;
 }
 
+.about-list p a {
+  font-family: inherit; /* Inherit font from the parent <p> tag */
+  font-weight: inherit; /* Inherit font-weight from the parent <p> tag */
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.about-list p a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
 .about-section .counter {
   padding: 22px 20px;
   background: var(--primary-color);

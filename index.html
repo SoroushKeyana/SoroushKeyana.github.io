@@ -175,12 +175,12 @@ in a range of programming languages and frameworks</p>
                             <div class="row about-list">
                                 <div class="col-md-5 table">
                                     <div class="media">
-                                        <label><i class="fa-solid fa-cake-candles"></i></label>
-                                        <p>27 January 1998</p>
+                                        <label><i class="fa-solid fa-cake-candles"></i></label> 
+                                        <p id="birth-date">27 January 1998</p>
                                     </div>
                                     <div class="media">
                                         <label><i class="fa-solid fa-person-cane"></i></label>
-                                        <p>26 Years</p>
+                                        <p id="age"></p>
                                     </div>
                                     <div class="media">
                                         <label><i class="fa-solid fa-earth-americas"></i></label>
@@ -194,19 +194,19 @@ in a range of programming languages and frameworks</p>
                                 <div class="col-md-5">
                                     <div class="media">
                                         <label><i class="fa-solid fa-envelope"></i></label>
-                                        <p class="ml-2"> soroush.keyana@gmail.com</p>
+                                        <p class="ml-2"><a href="mailto:soroush.keyana@gmail.com">soroush.keyana@gmail.com</a></p>
                                     </div>
                                     <div class="media">
                                         <label><i class="fa-solid fa-square-phone"></i></label>
-                                        <p>+46 700 177 458</p>
-                                    </div>
-                             444       <div class="media">
-                                        <label><i class="fa-brands fa-square-whatsapp"></i></label>
-                                        <p>+46 700 177 458</p>
+                                        <p><a href="tel:+46700177458">+46 700 177 458</a></p>
                                     </div>
                                     <div class="media">
                                         <label><i class="fa-brands fa-github"></i></label>
-                                        <p>SoroushKeyana</p>
+                                        <p><a href="https://github.com/SoroushKeyana" target="_blank">SoroushKeyana</a></p>
+                                    </div>
+                                    <div class="media">
+                                        <label><i class="fa-brands fa-square-whatsapp"></i></label>
+                                        <p><a href="https://wa.me/46700177458" target="_blank">+46 700 177 458</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -347,6 +347,21 @@ in a range of programming languages and frameworks</p>
                     profileImageHover.style.opacity = '0';
                     profileImageHover2.style.opacity = '0';
                 });
+
+                // Age calculation
+                const birthDateString = document.getElementById('birth-date').textContent;
+                const birthDate = new Date(birthDateString);
+                const today = new Date();
+                let age = today.getFullYear() - birthDate.getFullYear();
+                const monthDifference = today.getMonth() - birthDate.getMonth();
+                
+                if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+                    age--;
+                }
+                
+                const ageElement = document.getElementById('age');
+                ageElement.textContent = `${age} Years`;
+
             });
 
 
