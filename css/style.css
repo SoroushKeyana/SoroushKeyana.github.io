@@ -361,7 +361,26 @@ a {
 .projects-title {
     text-align: center;
     margin-bottom: 50px; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Fraunces", serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.projects-title::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 330px;
+    height: 3px;
+    background-color: var(--yellow);
 }
 
 .projects {
@@ -470,6 +489,13 @@ a {
     color: var(--text-color);
 }
 
+.project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
 
 /* Projects Responsive */
 @media only screen and (max-width: 1200px) {
@@ -518,7 +544,7 @@ a {
   
   .card {
     max-width: 350px;
-    height: 130px;
+    height: auto;
     background: #000;
     font-size: 8px !important;
 }
@@ -543,7 +569,9 @@ a {
     margin-top: 0px;
 }
 .card .details .center a.btn {
-    font-size: 10%;
+    font-size: 10px;
+    padding: 5px 10px;
+    margin-top: 5px;
 }
 }
 
